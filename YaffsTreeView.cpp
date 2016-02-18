@@ -21,6 +21,7 @@
 #include <QDragEnterEvent>
 #include <QUrl>
 #include <QDir>
+#include <QMimeData>
 
 #include "YaffsTreeView.h"
 #include "YaffsItem.h"

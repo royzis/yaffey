@@ -21,7 +21,11 @@
 typedef unsigned char u8;
 typedef unsigned short u16;
 typedef unsigned u32;
+#ifdef __linux__
+#include <stdlib.h>
+#else
 typedef unsigned loff_t;
+#endif
 
 #define YAFFS_MAX_NAME_LENGTH           255
 #define YAFFS_MAX_ALIAS_LENGTH          159
